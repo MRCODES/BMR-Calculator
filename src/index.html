@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+        <!--:::::META::::: -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/src/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+
+        <!--:::::TITLE::::: -->
+
+        <title>Document</title>
+
+
+        <!--:::::CSS::::: -->
+
+        <link rel="stylesheet" href="/src/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+
+
+        <!--:::::JS::::: -->
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="/src/script_two.js"></script>
+  
+
 </head>
 
 
 
 <body>
     
-<div class="page-wrapper">
+<div class="app-wrapper">
 
 
     <i class="fa fa-bars" id="bars" ></i>
@@ -32,41 +52,61 @@
 
 
        
+        <div id="menu">
+           
+            <a href="#logo"_blank" rel="">Logo</a>
+            <a href="#privacy" target="_blank" rel="">Privacy</a>
+            <a href="#feeback" target="_blank" rel="">Feedback</a>
+               
+
+        </div>
+
 
         <div id="inputs"> <!--INPUT START-->
 
-            <div id="age">
-                <p>Age</p>
-            </div>
-            <input type="text">
 
-            <div id="gender">
-                <p>Gender</p>
-            </div>
-            <input type="text">
+            <form action="#">
+                <div id="gender-box">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male" >
+                <br>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female" checked>
+                </div>
 
-            <div id="height">
-                <p>Height</p>
-            </div>
-            <input type="text">
+                <br>
+                <p>Age (Years)</p>
+                <input type="number" id="age" class="text-style" value="25" step=".1" required>
+                <br>
+                <p>Height (Cm)</p>
+                <input type="number" id="height" class="text-style" value="161.5" step=".1" required>
+                <br>
+                <p>Weight (Kg)</p>
+                <input type="number" id="weight" class="text-style" value="61" step=".1" required>
+                <br>
 
-            <div id="weight">
-                <p>Weight</p>
-            </div>
-            <input type="text">
+            </form>
 
-        </div> <!---INPUT END-->
+
+
+        </div> <!---INPUTS END-->
+
+
+
 
         <button id="btn">Calculate</button>
 
 
         <div id="inset" id="total-number">
-            <h2>1,500</h2>
+            <h2 id="bmr">0</h2>
         </div>
 
         <div id="total-label">
             <p>Calories/Day</p>
         </div>
+
+        <div></div>
+
 
     </section>
 
@@ -76,8 +116,6 @@
 
 
 
-
-<script src="/src/index.js"></script>
-
 </body>
 </html>
+

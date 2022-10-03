@@ -57,7 +57,7 @@ p {
          background-clip: text;
 }
 
-.page-wrapper {
+.app-wrapper {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr;
@@ -65,7 +65,7 @@ p {
     margin: 0 auto;
     margin-top: 4%;
     width: 320px;
-    height: 85%;
+    height: 775px;
     background-color: whitesmoke;
     border-radius: 15px;
     box-shadow: 1px 7px 7px 6px;
@@ -77,6 +77,16 @@ p {
 section#main-content {
     height: 100%;
     position: relative;
+}
+
+
+#menu {
+    position: absolute;
+    height: 100vh;
+    width: 50vh;
+    background-color: #fff;
+    transition: .3s;
+
 }
 
 h1 {
@@ -185,11 +195,11 @@ border-radius: 15px 15px 0 0;
     animation: beatingHeart .8s .3s;
 
                 background-color: var(--deep_red);
-                    color: transparent;
-                    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-                    -webkit-background-clip: text;
-                    -moz-background-clip: text;
-                    background-clip: text;
+                color: transparent;
+                text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
 }
 
 #heart:hover {
@@ -224,29 +234,20 @@ border-radius: 15px 15px 0 0;
     margin-bottom: 20px;
 }
 
-input[type="text"] {
-
-    padding: 3%;
-    border: 1px solid lightgray;
-}
 
 button#btn {
 
     border-radius: 8px;
     margin: 10% 0;
   
-    padding: 8% 6%;
+    padding: 4% 2%;
     border: none;
     color: #fff;
     background: #027ad6;
     font: 700 24px sans-serif;
     box-shadow:
-        0 1px 2px rgba(0, 0, 0, 0.07),
-        0 2px 4px rgba(0, 0, 0, 0.07),
-        0 4px 8px rgba(0, 0, 0, 0.07),
-        0 8px 16px rgba(0, 0, 0, 0.07),
-        0 16px 32px rgba(0, 0, 0, 0.07),
-        0 32px 64px rgba(0, 0, 0, 0.07);
+        0 1px 2px rgba(0, 0, 0, 0.3);
+       
         transition: .3s;
 
             background-color: var(--deep_red);
@@ -284,4 +285,53 @@ button:hover {
         -webkit-background-clip: text;
         -moz-background-clip: text;
         background-clip: text;
+}
+
+
+
+
+input[type="number"] {
+    width: 35%;
+    text-align: center;
+    font-size: 1.5em;
+
+            background-color: #d14848;
+                color: transparent;
+                text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+            
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+
+    opacity: 1 !important;
+   
+}
+
+label[for="male"],label[for="female"]  { 
+
+background-color: #565656;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    padding: 3%;
+
+}
+
+
+
+
+
+
+
+#gender-box {
+display: flex;
+   align-items: center;
+   justify-content: center;
+   
 }
