@@ -34,6 +34,11 @@ box-sizing: border-box;
 }
 
 
+.left-to-right-slide {
+    left: 1%;
+}
+
+
 
 body {
     text-align: center;
@@ -42,6 +47,7 @@ body {
     font-weight: 700;
     font-size: 1.1em;
     height: 100vh;
+    
 }
 
 p {
@@ -82,11 +88,25 @@ section#main-content {
 
 #menu {
     position: absolute;
-    height: 100vh;
-    width: 50vh;
+    height: 95%;
+    width: 70%;
     background-color: #fff;
     transition: .3s;
+    top: 5%;
+    left: 0;
+    z-index: 3;
+    font-size: .8em;
+    transition: all 0.33s ease;
+   
 
+}
+
+#menu a {
+    color: #222;
+    display: flex;
+    padding: 4%;
+    border-bottom: 1px solid lightgray;
+   
 }
 
 h1 {
@@ -137,6 +157,10 @@ border-radius: 15px 15px 0 0;
             background-clip: text;
 }
 
+
+#menu-logo {
+width: 50%;
+}
 
 #bars {
         background-color: #565656;

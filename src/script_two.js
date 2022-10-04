@@ -3,7 +3,7 @@ $(document).ready( function() {
 
 
 
-  function calculateIt() {
+  function calculateBMR() {
 
     /*alert("Load Successfully");*/
     
@@ -14,25 +14,23 @@ $(document).ready( function() {
     var bmr;
 
     
-    if (he == '' || we == '' || ag == '') {
-
-
+      // If no data is enter this alert pops up.
+      if (he == '' || we == '' || ag == '') {
       alert('Enter all data!');
-
-
-    } else {
-
-
-      if (ge == 'male') bmr = 9.99 * we + 6.25 * he - 4.92 * ag + 5;
-      else bmr = 9.99 * we + 6.25 * he - 4.92 * ag - 161;
-
+      //The metric system BMR formula
+    } else { 
+      //Male BMR formula
+      if (ge == 'male') bmr = 88.362 + (13.397 * we) + (4.799 * he) - (5.677 * ag) ;
+      //Female BMR formula
+      else bmr = 447.593 + (9.247 * we) + (3.098 * he) - (4.330 * ag);
+      //The result plus the string of kcal.
       $('#bmr').html(Math.floor(bmr) + ' kcal');
 
     }
   }
 
 
-  $("#btn").click(calculateIt)
+  $("#btn").click(calculateBMR)
 
   $('#refresh').click(function() {
 
@@ -40,5 +38,16 @@ $(document).ready( function() {
     
 });
 
+//CONTINUE, SOLVE
+
+
+ $("#menu").hide();
+
+$("#bars").click(function(){
+  $("#menu").toggle(100);
+});
+
 
 });
+
+
