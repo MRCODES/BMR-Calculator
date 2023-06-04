@@ -8,9 +8,8 @@
     --deep_red: #E1341E;
 }
 
-*{
-
-box-sizing: border-box;
+* {
+    box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     font-family: poppins;
@@ -33,12 +32,9 @@ box-sizing: border-box;
     -moz-osx-font-smoothing: grayscale;
 }
 
-
 .left-to-right-slide {
     left: 1%;
 }
-
-
 
 body {
     text-align: center;
@@ -46,21 +42,19 @@ body {
     font-family: 'Comfortaa', cursive;
     font-weight: 700;
     font-size: 1.1em;
-    height: 100vh;
-    
+   
 }
 
 p {
     margin: 10px;
     padding: 5px;
     color: #222;
-
-        background-color: #565656;
-        color: transparent;
-        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-         background-clip: text;
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 .app-wrapper {
@@ -77,14 +71,12 @@ p {
     box-shadow: 1px 7px 7px 6px;
     position: relative;
     padding: 5% 0;
-    
 }
 
 section#main-content {
     height: 100%;
     position: relative;
 }
-
 
 #menu {
     position: absolute;
@@ -97,8 +89,6 @@ section#main-content {
     z-index: 3;
     font-size: .8em;
     transition: all 0.33s ease;
-   
-
 }
 
 #menu a {
@@ -106,35 +96,29 @@ section#main-content {
     display: flex;
     padding: 4%;
     border-bottom: 1px solid lightgray;
-   
 }
 
 h1 {
     display: flex;
-    align-self: flex-start;
+    padding: 7%;
     font-weight: 400;
     font-size: 2.3em;
     color: var(--blue_ice);
     font-family: 'Poppins', sans-serif;
-
-
-
 }
 
 #stripe {
-position: absolute;
-background-color: #fff;
-width: 100%;
-height: 38px;
-top:0;
-left:0;
-border-bottom: 1px solid lightgrey;
-border-radius: 15px 15px 0 0;
-
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    height: 38px;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 15px 15px 0 0;
 }
 
 #bars {
-
     position: absolute;
     z-index: 1;
     top: -1px;
@@ -147,31 +131,26 @@ border-radius: 15px 15px 0 0;
 }
 
 #bars:hover {
-    
-
-        background-color: var(--blue_ice);
-            color: transparent;
-            text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
+    background-color: var(--blue_ice);
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
-
 #menu-logo {
-width: 50%;
+    width: 50%;
 }
 
 #bars {
-        background-color: #565656;
-            color: transparent;
-            text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
-
-
 
 #refresh {
     position: absolute;
@@ -183,32 +162,27 @@ width: 50%;
     color: var(--light_blue);
     transition: 0.3s;
     z-index: 1;
-
-    
 }
 
-
 #refresh:hover {
-            background-color: var(--blue_ice);
-            color: transparent;
-            text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
+    background-color: var(--blue_ice);
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 #refresh {
-            background-color: #565656;
-            color: transparent;
-            text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
-
 #heart {
-
     font-size: 2.5em;
     color: white;
     border-radius: 50%;
@@ -217,13 +191,12 @@ width: 50%;
     margin: 2%;
     box-shadow: 1px 1px 3px 1px grey;
     animation: beatingHeart .8s .3s;
-
-                background-color: var(--deep_red);
-                color: transparent;
-                text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
+    background-color: var(--deep_red);
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 #heart:hover {
@@ -252,40 +225,31 @@ width: 50%;
     }
 }
 
-
-
 #inputs {
     margin-bottom: 20px;
 }
 
-
 button#btn {
-
     border-radius: 8px;
     margin: 10% 0;
-  
     padding: 4% 2%;
     border: none;
     color: #fff;
     background: #027ad6;
     font: 700 24px sans-serif;
-    box-shadow:
-        0 1px 2px rgba(0, 0, 0, 0.3);
-       
-        transition: .3s;
-
-            background-color: var(--deep_red);
-            color: transparent;
-            text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.655);
-            -webkit-background-clip: text;
-            -moz-background-clip: text;
-            background-clip: text;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    background-color: var(--deep_red);
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.655);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 button:hover {
     cursor: pointer;
     transform: scale(103%);
-    
 }
 
 #total-number {
@@ -297,67 +261,49 @@ button:hover {
     width: 100%;
     padding: 5%;
     border: 1px solid lightgray;
-
-
 }
-
 
 #inset {
-        background-color: #565656;
-        color: transparent;
-        text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
-
-
-
 
 input[type="number"] {
     width: 35%;
     text-align: center;
     font-size: 1.5em;
-
-            background-color: #d14848;
-                color: transparent;
-                text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-                -webkit-background-clip: text;
-                -moz-background-clip: text;
-                background-clip: text;
-            
+    background-color: #d14848;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-
     opacity: 1 !important;
-   
 }
 
-label[for="male"],label[for="female"]  { 
-
-background-color: #565656;
+label[for="male"],
+label[for="female"] {
+    background-color: #565656;
     color: transparent;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     padding: 3%;
-
 }
 
-
-
-
-
-
-
 #gender-box {
-display: flex;
-   align-items: center;
-   justify-content: center;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer {
@@ -372,7 +318,5 @@ footer {
 }
 
 h2 {
-
     font-size: 2.0em;
-
 }
